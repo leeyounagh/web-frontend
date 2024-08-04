@@ -128,10 +128,10 @@ export default function Index() {
                             </Grid>
                             <Grid item style={{ marginLeft: '20px' }}>
                                 <MDTypography variant="h4" color="secondary">
-                                    {data.title || '---'}
+                                    {data?.title || '---'}
                                 </MDTypography>
                                 <MDTypography variant="body1" color="secondary">
-                                    {data.author.nickname || '---'}
+                                    {data?.author?.nickname || '---'}
                                 </MDTypography>
                             </Grid>
                         </Grid>
@@ -217,19 +217,19 @@ export default function Index() {
                             <MDTypography variant="h5" color="secondary">
                                 Story Name
                             </MDTypography>
-                            <MDTypography variant="body2">{data.story.name || '---'}</MDTypography>
+                            <MDTypography variant="body2">{data?.story?.name || '---'}</MDTypography>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <MDTypography variant="h5" color="secondary">
                                 Updated Date
                             </MDTypography>
-                            <MDTypography variant="body2">{data.story.updatedDate || '---'}</MDTypography>
+                            <MDTypography variant="body2">{data?.story?.updatedDate || '---'}</MDTypography>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <MDTypography variant="h5" color="secondary">
                                 Created Date
                             </MDTypography>
-                            <MDTypography variant="body2">{data.story.createdDate || '---'}</MDTypography>
+                            <MDTypography variant="body2">{data?.story?.createdDate || '---'}</MDTypography>
                         </Grid>
                     </Grid>
                 </MDBox>
